@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-11-01)
+## Unreleased (2024-12-01)
 
 <section class="features">
 
@@ -34,7 +34,7 @@ This release closes the following issue:
 
 <details>
 
--   [`d90fdb9`](https://github.com/stdlib-js/stdlib/commit/d90fdb967ee785786f1fc37c148a17a8fa2e1db7) - **feat:** add `iter/cuevery-by` package [(#2838)](https://github.com/stdlib-js/stdlib/pull/2838) _(by Kaif Mohd, Kaif Mohd, Philipp Burckhardt)_
+-   [`d90fdb9`](https://github.com/stdlib-js/stdlib/commit/d90fdb967ee785786f1fc37c148a17a8fa2e1db7) - **feat:** add `iter/cuevery-by` package [(#2838)](https://github.com/stdlib-js/stdlib/pull/2838) _(by Mohammad Kaif, Kaif Mohd, Philipp Burckhardt)_
 
 </details>
 
@@ -48,7 +48,7 @@ This release closes the following issue:
 
 A total of 2 people contributed to this release. Thank you to the following contributors:
 
--   Kaif Mohd
+-   Mohammad Kaif
 -   Philipp Burckhardt
 
 </section>
