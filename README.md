@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-cuevery-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by@deno/mod.js';
+var iterCuEveryBy = require( '@stdlib/iter-cuevery-by' );
 ```
 
 #### iterCuEveryBy( iterator, predicate\[, thisArg] )
@@ -60,7 +78,7 @@ import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by
 Returns an [iterator][mdn-iterator-protocol] which cumulatively tests whether every iterated value passes a test implemented by a `predicate` function.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function predicate( v ) {
     return ( v > 0 );
@@ -104,7 +122,7 @@ To set the `predicate` function execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function predicate( v ) {
     this.count += 1;
@@ -159,8 +177,8 @@ var count = ctx.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by@deno/mod.js';
+var randu = require( '@stdlib/random-iter-randu' );
+var iterCuEveryBy = require( '@stdlib/iter-cuevery-by' );
 
 function threshold( r ) {
     return ( r > 0.05 );
@@ -215,7 +233,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -232,7 +250,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -245,8 +263,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-cuevery-by.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-cuevery-by
 
-[test-image]: https://github.com/stdlib-js/iter-cuevery-by/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/iter-cuevery-by/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/iter-cuevery-by/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/iter-cuevery-by/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-cuevery-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-cuevery-by?branch=main
@@ -258,8 +276,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
