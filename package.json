@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-cuevery-by",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create an iterator which cumulatively tests whether every iterated value passes a test implemented by a predicate function.",
   "license": "Apache-2.0",
   "author": {
