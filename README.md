@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-cuevery-by/tags). For example,
+
+```javascript
 import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by@v0.1.1-deno/mod.js';
 ```
 
@@ -160,7 +165,7 @@ var count = ctx.count;
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by@v0.1.1-deno/mod.js';
+import iterCuEveryBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-cuevery-by@deno/mod.js';
 
 function threshold( r ) {
     return ( r > 0.05 );
